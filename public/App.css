@@ -1,6 +1,9 @@
 .header {
   display: flex;
-  align-items: center; }
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  z-index: 1; }
   .header img {
     width: 50px;
     height: 50px; }
@@ -11,10 +14,33 @@
     list-style: none;
     justify-content: space-between; }
     .header ul a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
 
 .footer {
   text-align: center; }
+
+.home .home-hero {
+  position: relative; }
+  .home .home-hero img {
+    width: 100%; }
+  .home .home-hero .hero-content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; }
+    .home .home-hero .hero-content .title {
+      margin: 4px; }
+    .home .home-hero .hero-content .subtitle {
+      margin-bottom: 30px; }
+    .home .home-hero .hero-content form {
+      display: flex;
+      height: 30px; }
+      .home .home-hero .hero-content form input {
+        flex: 1; }
 
 body {
   font-family: Roboto, sans-serif;
@@ -22,5 +48,11 @@ body {
   font-size: 23px;
   line-height: 1.4;
   color: #212529; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 25px; }
 
 /*# sourceMappingURL=App.css.map */

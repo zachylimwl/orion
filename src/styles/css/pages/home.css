@@ -1,3 +1,23 @@
-
+.home .home-hero {
+  position: relative; }
+  .home .home-hero img {
+    width: 100%; }
+  .home .home-hero .hero-content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; }
+    .home .home-hero .hero-content .title {
+      margin: 4px; }
+    .home .home-hero .hero-content .subtitle {
+      margin-bottom: 30px; }
+    .home .home-hero .hero-content form {
+      display: flex;
+      height: 30px; }
+      .home .home-hero .hero-content form input {
+        flex: 1; }
 
 /*# sourceMappingURL=home.css.map */
