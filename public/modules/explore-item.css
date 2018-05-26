@@ -1,0 +1,15 @@
+.explore-item {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px; }
+  .explore-item img {
+    width: 125px;
+    margin: auto; }
+  .explore-item span:first-of-type {
+    width: 100%;
+    height: 5px;
+    background: #17C671;
+    margin: 10px 0; }
+
+/*# sourceMappingURL=explore-item.css.map */

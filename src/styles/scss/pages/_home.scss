@@ -1,0 +1,89 @@
+.home {
+  .home-hero {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .hero-content {
+      position: absolute;
+      width: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      .title {
+        margin: 4px;
+      }
+      .subtitle {
+        margin-bottom: 30px;
+      }
+      form {
+        display: flex;
+        height: 30px;
+        input {
+          flex: 1;
+        }
+      }
+      .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        tag {
+          width: 160px;
+          font-size: 12px;
+          padding: 5px 10px;
+          border: 2px solid white;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .home-body {
+    .explore {
+      display: flex;
+      max-width: 1000px;
+      margin: auto;
+      padding: 100px 150px;
+      text-align: center;
+      flex-direction: column;
+      .explore-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+      }
+    }
+    .perfect-clarity {
+      display: flex;
+      flex-direction: row;
+      background: $color-reverse;
+      color: white;
+      .section-content {
+        flex: 1;
+        padding: 50px;
+      }
+      img {
+        height: 300px;
+      }
+    }
+    .first-step {
+      display: flex;
+      flex-direction: column;
+      justify-content: centre;
+      padding: 100px 150px;
+      text-align: center;
+      .protocols {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+      }
+    }
+    .top-pick {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }   
+}

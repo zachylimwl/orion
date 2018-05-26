@@ -1,0 +1,17 @@
+.protocol-card {
+  position: relative;
+  width: 150px;
+  height: 180px;
+  margin: 10px;
+  img {
+    border-radius: 10px;
+  }
+  span {
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 5px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,12 @@
+.carousel {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	.arrow {
+		align-self: center;
+		height: 50px;
+		&.left {
+			transform: rotate(180deg);
+		}
+	}
+}
