@@ -1,5 +1,6 @@
 .home {
   .home-hero {
+    display: grid;
     position: relative;
     img {
       width: 100%;
@@ -31,7 +32,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 10px;
-        tag {
+        span {
           width: 160px;
           font-size: 12px;
           padding: 5px 10px;

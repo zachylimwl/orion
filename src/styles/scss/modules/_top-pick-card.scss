@@ -14,5 +14,13 @@
     flex-direction: column;
     padding: 30px;
     text-transform: capitalize;
+    text-align: left;
+    .metrics {
+      text-align: center;
+      height: 150px;
+    }
+    button {
+      width: 55%;
+    }
   }
 }

@@ -40,10 +40,10 @@ class Home extends Component {
                 <button>Search</button>
               </form>
               <div className="tags">
-                <tag>Smart Contract</tag>
-                <tag>Architecture</tag>
-                <tag>Analyst</tag>
-                <tag>Optimization</tag>
+                <span>Smart Contract</span>
+                <span>Architecture</span>
+                <span>Analyst</span>
+                <span>Optimization</span>
               </div>
           </div>
         </section>
@@ -84,7 +84,7 @@ class Home extends Component {
           <section className="top-pick">
             <h2 className="title">Community Top Pick</h2>
             <span className="title-line"/>
-            <Carousel numberVisible={3}>
+            <Carousel>
                 <TopPickCard image={person1} name="John Grint" job="blockchain artchitect" />
                 <TopPickCard image={person2} name="Emma Travolta" job="consultant" />
                 <TopPickCard image={person3} name="Rubert Hastings" job="Optimization" />

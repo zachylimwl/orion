@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 
 class TopPickCard extends Component {
   render() {
-    const { image, name, job } = this.props;
+    const { image, name, job, direction } = this.props;
+    const animate = {
+      transition: '0.5s',
+      transform: `translateX(${direction}px)`
+    }
     return (
-      <div className="top-pick-card">
+      <div className={'top-pick-card'} style={animate}>
         <img src={image} alt="" />
         <div className="card-content">
           <span className="name">{name}</span>

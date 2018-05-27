@@ -1,42 +1,42 @@
 import React, { Component } from 'react';
 import arrow from '../asset/img/arrow.png';
 
+
 class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      numberVisible: 3,
-      firstVisibleIndex: 0
+      index: 0,
+      direction: 0,
     }
   }
 
-  componentWillMount() {
-    const { numberVisible } = this.props;
-    this.setState({numberVisible});
-  }
-
   swipeLeft = () => {
-    const { firstVisibleIndex } = this.state;
-    if ( firstVisibleIndex > 0 ) {
-      this.setState({firstVisibleIndex: firstVisibleIndex - 1});
+    const { index, direction } = this.state;
+
+    if ( index > 0 ) {
+      this.setState({direction: direction + 360, index: index - 1});
     }
   }
 
   swipeRight = () => {
-    const { firstVisibleIndex, numberVisible } = this.state;
-    if ( firstVisibleIndex < numberVisible - 1) {
-      this.setState({firstVisibleIndex: firstVisibleIndex + 1});
+    const { children } = this.props;
+    const { index, direction } = this.state;
+
+    if ( index < children.length - 1) {
+      this.setState({direction: direction - 360, index: index + 1});
     }
   }
 
   render() {
     const { children } = this.props;
-    const { numberVisible, firstVisibleIndex } = this.state;
-    let items = children.slice(firstVisibleIndex, firstVisibleIndex + numberVisible);
+    const { direction } = this.state;
     return (
       <div className="carousel">
         <img className="arrow left" src={arrow} alt="" onClick={this.swipeLeft} />
-        { items }
+        <div className="carousel-items">
+          {React.Children.map(children, item => React.cloneElement(item, { direction }))}
+        </div>
         <img className="arrow" src={arrow} alt="" onClick={this.swipeRight} />
       </div>
     );
