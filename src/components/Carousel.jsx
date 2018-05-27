@@ -23,7 +23,7 @@ class Carousel extends Component {
     const { children } = this.props;
     const { index, direction } = this.state;
 
-    if ( index < children.length - 1) {
+    if ( index < children.length - 3) {
       this.setState({direction: direction - 360, index: index + 1});
     }
   }
